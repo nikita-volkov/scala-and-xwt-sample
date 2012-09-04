@@ -1,0 +1,35 @@
+<Shell xmlns="http://www.eclipse.org/xwt/presentation" xmlns:x="http://www.eclipse.org/xwt"
+  x:Class="swtTestApp.SwtTestApp" text="XWT Application" 
+  xmlns:z="clr-namespace:swtTestApp">
+  <Shell.layout>
+    <FillLayout type="VERTICAL" />
+  </Shell.layout>
+  <Composite>
+    <Composite.layout>
+      <RowLayout justify="true" type="Horizontal" fill="true"
+        center="true" />
+    </Composite.layout>
+    <TabFolder>
+      <TabItem text="Status">
+        <TabItem.control>
+          <Composite>
+            <Composite.layout>
+              <RowLayout justify="true" />
+            </Composite.layout>
+            <z:Status />
+          </Composite>
+        </TabItem.control>
+      </TabItem>
+      <TabItem text="Settings">
+        <TabItem.control>
+          <Composite>
+            <Composite.layout>
+              <FillLayout />
+            </Composite.layout>
+            <z:Settings />
+          </Composite>
+        </TabItem.control>
+      </TabItem>
+    </TabFolder>
+  </Composite>
+</Shell>
