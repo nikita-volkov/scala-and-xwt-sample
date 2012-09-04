@@ -1,4 +1,4 @@
-package swtTestApp
+package scalaAndXwt
 
 import scala.beans.BeanProperty
 

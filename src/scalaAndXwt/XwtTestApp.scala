@@ -1,4 +1,4 @@
-package swtTestApp
+package scalaAndXwt
 
 import java.net.URL;
 
@@ -12,10 +12,13 @@ class XwtTestApp {
 
 }
 object XwtTestApp extends App {
-  
+
   val shell =
     XWT.load(
-      getClass.getResource( reflect.runtime.currentMirror.reflect(this).symbol.name + IConstants.XWT_EXTENSION_SUFFIX ),
+      getClass.getResource(
+        reflect.runtime.currentMirror.reflect( this ).symbol.name +
+          IConstants.XWT_EXTENSION_SUFFIX
+      ),
       new State
     ).getShell
 
@@ -28,6 +31,7 @@ object XwtTestApp extends App {
 
   shell.open()
 
+  // manage events
   while ( !shell.isDisposed ) {
     if ( !shell.getDisplay.readAndDispatch() ) {
       shell.getDisplay.sleep();

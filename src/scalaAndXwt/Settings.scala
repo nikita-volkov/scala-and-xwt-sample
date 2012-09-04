@@ -1,4 +1,4 @@
-package swtTestApp
+package scalaAndXwt
 
 import java.net.URL;
 import java.util.HashMap;

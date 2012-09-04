@@ -1,4 +1,4 @@
-package swtTestApp.converters
+package scalaAndXwt.converters
 
 import org.eclipse.e4.xwt.IValueConverter
 import org.eclipse.core.databinding.conversion.IConverter
