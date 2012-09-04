@@ -12,9 +12,9 @@
         <GridLayout numColumns="2" />
       </Composite.layout>
       <Label text="Tasks open:" />
-      <Label text="0" />
+      <Label text="{Binding path=tasksOpen, Mode=OneWay}" />
       <Label text="Tasks running:" />
-      <Label text="0" />
+      <Label text="{Binding path=tasksRunning, Mode=OneWay}" />
     </Composite>
   </Composite>
   <Composite>

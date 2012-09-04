@@ -1,5 +1,5 @@
 <Shell xmlns="http://www.eclipse.org/xwt/presentation" xmlns:x="http://www.eclipse.org/xwt"
-  x:Class="swtTestApp.SwtTestApp" text="XWT Application" 
+  x:Class="swtTestApp.XwtTestApp" text="XWT Application" 
   xmlns:z="clr-namespace:swtTestApp">
   <Shell.layout>
     <FillLayout type="VERTICAL" />
