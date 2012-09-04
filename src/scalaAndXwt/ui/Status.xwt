@@ -1,7 +1,10 @@
-<Composite xmlns="http://www.eclipse.org/xwt/presentation"
-  xmlns:x="http://www.eclipse.org/xwt" x:Class="swtTestApp.Status">
+<Composite
+  xmlns="http://www.eclipse.org/xwt/presentation"
+  xmlns:x="http://www.eclipse.org/xwt">
   <Composite.layout>
-    <RowLayout type="VERTICAL" center="true" />
+    <RowLayout
+      type="VERTICAL"
+      center="true" />
   </Composite.layout>
   <Composite>
     <Composite.layout>
@@ -21,6 +24,8 @@
     <Composite.layout>
       <RowLayout justify="true" />
     </Composite.layout>
-    <Button text="Refresh" x:Style="CENTER" />
+    <Button
+      text="Refresh"
+      x:Style="CENTER" />
   </Composite>
 </Composite>

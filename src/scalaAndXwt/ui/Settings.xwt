@@ -1,7 +1,8 @@
-<Composite xmlns="http://www.eclipse.org/xwt/presentation"
-  xmlns:x="http://www.eclipse.org/xwt" x:Class="swtTestApp.Settings"
-  xmlns:converters="clr-namespace:swtTestApp.converters"
-  xmlns:z="clr-namespace:swtTestApp">
+<Composite
+  xmlns="http://www.eclipse.org/xwt/presentation"
+  xmlns:x="http://www.eclipse.org/xwt"
+  xmlns:converters="clr-namespace:scalaAndXwt.ui.converters"
+  xmlns:ui="clr-namespace:scalaAndXwt.ui">
   <Composite.layout>
     <GridLayout numColumns="2" />
   </Composite.layout>
@@ -10,7 +11,9 @@
     <Composite.layout>
       <RowLayout center="true" />
     </Composite.layout>
-    <Text x:Style="BORDER | RIGHT" x:Name="text"
+    <Text
+      x:Style="BORDER | RIGHT"
+      x:Name="text"
       text="{Binding path=requestsInterval, updateSourceTrigger=PropertyChanged, 
       Mode=TwoWay, converter=converters:MilisecToText}">
       <Text.layoutData>
@@ -18,7 +21,10 @@
       </Text.layoutData>
     </Text>
     <Label text="s" />
-    <Scale minimum="0" maximum="1000" x:Name="scale"
+    <Scale
+      minimum="0"
+      maximum="1000"
+      x:Name="scale"
       selection="{Binding  path=requestsInterval, updateSourceTrigger=PropertyChanged, 
       converter=converters:MilisecToScaleSelection}" />
   </Composite>

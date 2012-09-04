@@ -1,4 +1,4 @@
-package scalaAndXwt.converters
+package scalaAndXwt.ui.converters
 
 import org.eclipse.e4.xwt.IValueConverter
 

@@ -1,4 +1,4 @@
-package scalaAndXwt
+package scalaAndXwt.state
 
 import scala.beans.BeanProperty
 
