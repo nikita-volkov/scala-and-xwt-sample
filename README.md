@@ -1,11 +1,11 @@
 #Introduction to XWT
-XWT is an XML wrapper around SWT graphical user interface framework (an alternative to Swing) developed by Eclipse Foundation. It provides the user with ability to write UI in a completely declarative style and clearly decouples the presentation and business logic of the application. It beats the hell out of Scala's messy Swing library and without any doubt the Swing itself. If you have ever heard about such technologies as Flex (MXML), XUL or XAML, XWT is very similar.
+XWT is an XML wrapper around SWT graphical user interface framework for JVM developed by Eclipse Foundation. It provides the user with ability to write UI in a completely declarative style and clearly decouples the presentation and business logic of the application. It beats the hell out of Scala's messy Swing library and without any doubt the Swing itself. If you have ever heard about such technologies as Flex (MXML), XUL or XAML, XWT is very similar.
 
 #Project Status
 This project covers advanced features such as components composition, state (model) management, event handling and data binding. It is tested with Scala 2.10. 
 
 #Running
-Clone the repository and import the project in Eclipse. Run the `ScalaAndXwt` app file. 
+Clone the repository and import the project in Eclipse. Run the `ScalaAndXwt` app file.
 
 #Useful Links
 Unfortunately there's not much decent documentation on XWT around yet, so I grouped the links I found useful while exploring this technology:
