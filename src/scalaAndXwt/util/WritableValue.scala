@@ -1,27 +1,12 @@
 package scalaAndXwt.util
 
-import org.eclipse.core.databinding.observable.value.IObservableValue
-import org.eclipse.core.databinding.observable.Realm
-import org.eclipse.core.databinding.observable.value.AbstractObservableValue
+import scala.reflect.ClassTag
+
 import org.eclipse.core.databinding.observable.Diffs
-import scala.reflect._
+import org.eclipse.core.databinding.observable.value.AbstractObservableValue
 
 class WritableValue[ T : ClassTag ]( private var v : T = null )
-  extends AbstractObservableValue( {
-    println(Realm.getDefault)
-    Realm.getDefault
-  } ) {
-  //  def doSetValue( a : T ) {
-  //    if ( v map ( _ == a ) getOrElse false ) {
-  //      val oldValue = v.orNull
-  //      v = Some(a)
-  //      fireValueChange( Diffs.createValueDiff( oldValue, a ) )
-  //    }
-  //  }
-  def value_=( a : T ) {
-    setValue( a )
-  }
-  def value = v
+  extends AbstractObservableValue {
 
   override def doSetValue( a : Any ) {
     if ( v != a ) {
@@ -30,8 +15,7 @@ class WritableValue[ T : ClassTag ]( private var v : T = null )
   }
   def doGetValue = v.asInstanceOf[ Object ]
   def getValueType = reflect.classTag[ T ].runtimeClass
+  
+  def value_=( a : T ) { setValue( a ) }
+  def value = v
 }
-
-//class WritableValue[ T <: Object : ClassTag ]( private var v : T = null ) extends IObservableValue {
-//
-//}
