@@ -1,4 +1,5 @@
 <Composite
+  x:Class="scalaAndXwt.ui.Status"
   xmlns="http://www.eclipse.org/xwt/presentation"
   xmlns:x="http://www.eclipse.org/xwt">
   <Composite.layout>
@@ -8,17 +9,20 @@
   </Composite.layout>
   <Composite>
     <Composite.layout>
-      <RowLayout justify="true" />
+      <GridLayout numColumns="2" />
     </Composite.layout>
-    <Composite>
-      <Composite.layout>
-        <GridLayout numColumns="2" />
-      </Composite.layout>
-      <Label text="Tasks open:" />
-      <Label text="{Binding path=tasksOpen, Mode=OneWay}" />
-      <Label text="Tasks running:" />
-      <Label text="{Binding path=tasksRunning, Mode=OneWay}" />
-    </Composite>
+    <Label text="Tasks open:" />
+    <Label text="{Binding path=tasksOpen, Mode=OneWay}">
+      <Label.layoutData>
+        <GridData widthHint="30" />
+      </Label.layoutData>
+    </Label>
+    <Label text="Tasks running:" />
+    <Label text="{Binding path=tasksRunning, Mode=OneWay}">
+      <Label.layoutData>
+        <GridData widthHint="30" />
+      </Label.layoutData>
+    </Label>
   </Composite>
   <Composite>
     <Composite.layout>
@@ -26,6 +30,7 @@
     </Composite.layout>
     <Button
       text="Refresh"
+      selectionEvent="onRefreshClick"
       x:Style="CENTER" />
   </Composite>
 </Composite>
