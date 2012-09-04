@@ -26,7 +26,7 @@ object ScalaAndXwt extends App {
 
   { // centerInDisplay
     val area = shell.getDisplay.getClientArea
-    shell.setBounds( area.width / 4, area.height / 4, area.width / 4, area.height / 4 )
+    shell.setBounds( 480, 300, 480, 300 )
   }
 
   shell.open()
