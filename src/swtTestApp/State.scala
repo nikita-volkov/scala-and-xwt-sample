@@ -1,5 +1,8 @@
 package swtTestApp
 
+import scala.beans.BeanProperty
+
 class State {
-	var requestsInterval : Int = 0
+  @BeanProperty var requestsInterval : Int = 5000
+
 }

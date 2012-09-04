@@ -21,8 +21,5 @@
     <Scale minimum="0" maximum="1000" x:Name="scale"
       selection="{Binding  path=RequestsInterval, updateSourceTrigger=PropertyChanged, 
       converter=converters:MilisecToScaleSelection}" />
-
   </Composite>
-
-
 </Composite>

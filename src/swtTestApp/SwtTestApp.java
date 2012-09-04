@@ -14,7 +14,7 @@ public class SwtTestApp {
 	public static void main(String args[]) throws Exception {
 		URL url = SwtTestApp.class.getResource(SwtTestApp.class.getSimpleName()
 				+ IConstants.XWT_EXTENSION_SUFFIX);
-		Control control = XWT.load(url, new State2());
+		Control control = XWT.load(url, new State());
 		Shell shell = control.getShell();
 		shell.layout();
 		centerInDisplay(shell);
