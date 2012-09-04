@@ -8,6 +8,8 @@ import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
 
+import reflect.runtime._
+
 class XwtTestApp {
 
 }
@@ -16,7 +18,7 @@ object XwtTestApp extends App {
   val shell =
     XWT.load(
       getClass.getResource(
-        reflect.runtime.currentMirror.reflect( this ).symbol.name +
+        currentMirror.reflect( this ).symbol.name +
           IConstants.XWT_EXTENSION_SUFFIX
       ),
       new State
