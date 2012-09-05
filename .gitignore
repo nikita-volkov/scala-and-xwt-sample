@@ -2,4 +2,4 @@ target/
 *.iml
 *.sublime*
 bin/
-.cache
+.*
