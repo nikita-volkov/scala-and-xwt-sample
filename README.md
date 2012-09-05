@@ -5,7 +5,7 @@ XWT is an XML wrapper around SWT graphical user interface framework for JVM deve
 This project covers advanced features such as components composition, state (model) management, event handling and data binding. It is tested with Scala 2.10. 
 
 #Running
-Clone the repository and import the project in Eclipse. Run the `ScalaAndXwt` app file.
+Run the `ScalaAndXwt` app file. If you're on Mac due to [this issue](http://stackoverflow.com/q/3976342/485115) you'll have to append `-XstartOnFirstThread` to VM parameters in your run configuration.
 
 #Useful Links
 Unfortunately there's not much decent documentation on XWT around yet, so I grouped the links I found useful while exploring this technology:
