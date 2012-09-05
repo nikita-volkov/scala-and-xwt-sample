@@ -3,7 +3,7 @@ package scalaAndXwt
 import org.eclipse.core.databinding.observable.Realm
 import org.eclipse.e4.xwt.XWT
 import org.eclipse.jface.databinding.swt.SWTObservables
-import org.eclipse.swt.widgets.{ Shell, Display }
+import org.eclipse.swt.widgets.Display
 
 import scalaAndXwt.state.State
 
