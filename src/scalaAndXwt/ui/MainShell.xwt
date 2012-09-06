@@ -3,39 +3,34 @@
   xmlns:x="http://www.eclipse.org/xwt"
   x:Class="scalaAndXwt.ui.MainShell"
   text="XWT Application"
-  xmlns:ui="clr-namespace:scalaAndXwt.ui">
-  <Shell.layout>
-    <FillLayout type="VERTICAL" />
-  </Shell.layout>
-  <Composite>
-    <Composite.layout>
-      <RowLayout
-        justify="true"
-        type="Horizontal"
-        fill="true"
-        center="true" />
-    </Composite.layout>
-    <TabFolder>
-      <TabItem text="Status">
-        <TabItem.control>
-          <Composite>
-            <Composite.layout>
-              <RowLayout justify="true" />
-            </Composite.layout>
-            <ui:Status />
-          </Composite>
-        </TabItem.control>
-      </TabItem>
-      <TabItem text="Settings">
-        <TabItem.control>
-          <Composite>
-            <Composite.layout>
-              <FillLayout />
-            </Composite.layout>
-            <ui:Settings />
-          </Composite>
-        </TabItem.control>
-      </TabItem>
-    </TabFolder>
-  </Composite>
+  xmlns:ui="clr-namespace:scalaAndXwt.ui"
+  x:Style="CLOSE | MIN | TITLE">
+	<Shell.layout>
+		<GridLayout/>
+	</Shell.layout>
+	<TabFolder>
+		<TabFolder.layoutData>
+			<GridData grabExcessHorizontalSpace="true" horizontalAlignment="CENTER"/>
+		</TabFolder.layoutData>
+    <TabItem text="Status">
+      <TabItem.control>
+        <Composite>
+          <Composite.layout>
+            <RowLayout justify="true" />
+          </Composite.layout>
+          <ui:Status />
+        </Composite>
+      </TabItem.control>
+    </TabItem>
+    <TabItem text="Settings">
+      <TabItem.control>
+        <Composite>
+          <Composite.layout>
+            <FillLayout />
+          </Composite.layout>
+          <ui:Settings />
+        </Composite>
+      </TabItem.control>
+    </TabItem>
+  </TabFolder>
 </Shell>
