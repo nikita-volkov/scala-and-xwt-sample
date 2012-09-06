@@ -12,6 +12,8 @@ Due to [this issue](http://stackoverflow.com/q/3976342/485115) you'll have to ap
 ##No jars for platforms other than Mac included in project's repository
 Currently this distribution includes only `org.eclipse.swt.cocoa.macosx` library of all SWT libraries for different platforms. To be able to run this project on platforms other than Mac you'll have to provide it with the appropriate jar or just use the Eclipse-plugin version of this project maintained on the `develop` and `master` branches.
 
+[There is](http://swt-repo.googlecode.com/) a Google Code project hosting the latest SWT artifacts. You can choose an artifact for your platform from [this list](http://swt-repo.googlecode.com/svn/repo/org/eclipse/swt/).
+
 #Useful Links
 Unfortunately there's not much decent documentation on XWT around yet, so I grouped the links I found useful while exploring this technology:
 
