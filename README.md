@@ -4,8 +4,13 @@ XWT is an XML wrapper around SWT graphical user interface framework for JVM deve
 #Project Status
 This project covers advanced features such as components composition, state (model) management, event handling and data binding. It is tested with Scala 2.10. 
 
-#Running
-Run the `ScalaAndXwt` app file. If you're on Mac due to [this issue](http://stackoverflow.com/q/3976342/485115) you'll have to append `-XstartOnFirstThread` to VM parameters in your run configuration.
+#Issues
+
+##Main thread on Mac
+Due to [this issue](http://stackoverflow.com/q/3976342/485115) you'll have to append `-XstartOnFirstThread` to VM parameters in your run configuration.
+
+##No jars for platforms other than Mac included in project's repository
+Currently this distribution includes only `org.eclipse.swt.cocoa.macosx` library of all SWT libraries for different platforms. To be able to run this project on platforms other than Mac you'll have to provide it with the appropriate jar or just use the Eclipse-plugin version of this project maintained on the `develop` and `master` branches.
 
 #Useful Links
 Unfortunately there's not much decent documentation on XWT around yet, so I grouped the links I found useful while exploring this technology:
