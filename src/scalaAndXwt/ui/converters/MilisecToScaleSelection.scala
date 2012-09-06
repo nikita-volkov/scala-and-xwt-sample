@@ -1,6 +1,7 @@
 package scalaAndXwt.ui.converters
 
 import org.eclipse.e4.xwt.IValueConverter
+import scalaAndXwt.state.State
 
 class MilisecToScaleSelection extends IValueConverter {
   def getFromType = classOf[ Int ]
@@ -16,8 +17,14 @@ class MilisecToScaleSelection extends IValueConverter {
     ).asInstanceOf[ Object ]
 
   def milisecToScale( a : Int ) =
-    math.sqrt( ( a - 50d ) / ( 60000 - 50 ) ) * 1000 toInt
+    math.pow(
+      ( a - State.requestsIntervalMin toDouble ) /
+        ( State.requestsIntervalMax - State.requestsIntervalMin ),
+      1d / 3
+    ) * 1000 toInt
 
   def scaleToMilisec( a : Int ) =
-    50 + ( 60000 - 50 ) * math.pow( a / 1000d, 2 ) toInt
+    State.requestsIntervalMin +
+      ( State.requestsIntervalMax - State.requestsIntervalMin ) *
+      math.pow( a / 1000d, 3 ) toInt
 }

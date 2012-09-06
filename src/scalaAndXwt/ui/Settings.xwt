@@ -13,18 +13,16 @@
     </Composite.layout>
     <Text
       x:Style="BORDER | RIGHT"
-      x:Name="text"
       text="{Binding path=requestsInterval, updateSourceTrigger=PropertyChanged, 
       Mode=TwoWay, converter=converters:MilisecToText}">
       <Text.layoutData>
-        <RowData width="40" />
+        <RowData width="45" />
       </Text.layoutData>
     </Text>
     <Label text="s" />
     <Scale
       minimum="0"
       maximum="1000"
-      x:Name="scale"
       selection="{Binding  path=requestsInterval, updateSourceTrigger=PropertyChanged, 
       converter=converters:MilisecToScaleSelection}" />
   </Composite>
