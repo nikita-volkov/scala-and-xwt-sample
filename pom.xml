@@ -9,48 +9,56 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <dependencies>
+
+
+    <!-- OSX 64-bit -->
     <dependency>
-      <groupId>com.weiglewilczek.slf4s</groupId>
-      <artifactId>slf4s_2.9.1</artifactId>
-      <version>1.0.7</version>
+      <groupId>org.eclipse.swt.cocoa</groupId>
+      <artifactId>macosx.x86_64</artifactId>
+      <version>3.8</version>
     </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>1.6.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.scalatest</groupId>
-      <artifactId>scalatest_2.10.0-M7</artifactId>
-      <version>1.9-2.10.0-M7-B1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.7</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.scala-lang</groupId>
-      <artifactId>scala-swing</artifactId>
-      <version>2.10.0-M7</version>
-    </dependency>
-    <dependency>
-      <groupId>org.scala-lang</groupId>
-      <artifactId>scala-reflect</artifactId>
-      <version>2.10.0-M7</version>
-    </dependency>
-    <dependency>
-      <groupId>org.scala-lang</groupId>
-      <artifactId>scala-library</artifactId>
-      <version>2.10.0-M7</version>
-    </dependency>
-    <dependency>
-      <groupId>org.scala-lang</groupId>
-      <artifactId>scala-compiler</artifactId>
-      <version>2.10.0-M7</version>
-    </dependency>
+    <!-- OSX 32-bit -->
+    <!--
+        <dependency>
+          <groupId>org.eclipse.swt.cocoa</groupId>
+          <artifactId>macosx</artifactId>
+          <version>3.8</version>
+        </dependency>
+    -->
+
+    <!-- Linux 64-bit -->
+    <!--
+        <dependency>
+          <groupId>org.eclipse.swt.gtk</groupId>
+          <artifactId>linux.x86_64</artifactId>
+          <version>3.8</version>
+        </dependency>
+    -->
+    <!-- Linux 32-bit -->
+    <!--
+        <dependency>
+          <groupId>org.eclipse.swt.gtk</groupId>
+          <artifactId>linux.x86</artifactId>
+          <version>3.8</version>
+        </dependency>
+    -->
+
+    <!-- Windows 64-bit -->
+    <!--
+        <dependency>
+          <groupId>org.eclipse.swt.win32</groupId>
+          <artifactId>win32.x86_64</artifactId>
+          <version>3.8</version>
+        </dependency>
+    -->
+    <!-- Windows 32-bit -->
+    <!--
+        <dependency>
+          <groupId>org.eclipse.swt.win32</groupId>
+          <artifactId>win32.x86</artifactId>
+          <version>3.8</version>
+        </dependency>
+    -->
 
     <dependency>
       <groupId>com.ibm</groupId>
@@ -65,7 +73,7 @@
     <dependency>
       <groupId>org.eclipse.core</groupId>
       <artifactId>commands</artifactId>
-      <version>3.6.0.I20110111-0800</version>
+      <version>3.6.1.v20120521-2329</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.core.databinding</groupId>
@@ -105,7 +113,7 @@
     <dependency>
       <groupId>org.eclipse.equinox</groupId>
       <artifactId>common</artifactId>
-      <version>3.6.0.v20110523</version>
+      <version>3.6.100.v20120522-1841</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.equinox</groupId>
@@ -120,7 +128,7 @@
     <dependency>
       <groupId>org.eclipse</groupId>
       <artifactId>jface</artifactId>
-      <version>3.7.0.v20110928-1505</version>
+      <version>3.8.0.v20120521-2329</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jface</groupId>
@@ -130,38 +138,48 @@
     <dependency>
       <groupId>org.eclipse</groupId>
       <artifactId>osgi</artifactId>
-      <version>3.7.2.v20120110-1415</version>
+      <version>3.8.0.v20120529-1548</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.weiglewilczek.slf4s</groupId>
+      <artifactId>slf4s_2.9.1</artifactId>
+      <version>1.0.7</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.swt.cocoa.macosx</groupId>
-      <artifactId>x86_64</artifactId>
-      <version>3.7.2.v3740f</version>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.6.6</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse</groupId>
-      <artifactId>swt</artifactId>
-      <version>3.7.2.v3740f</version>
+      <groupId>org.scalatest</groupId>
+      <artifactId>scalatest_2.10.0-M7</artifactId>
+      <version>1.9-2.10.0-M7-B1</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.eclipse</groupId>
-      <artifactId>text</artifactId>
-      <version>3.5.101.v20110928-1504</version>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.7</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.ui</groupId>
-      <artifactId>forms</artifactId>
-      <version>3.5.101.v20111011-1919</version>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-reflect</artifactId>
+      <version>2.10.0-M7</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.ui</groupId>
-      <artifactId>workbench</artifactId>
-      <version>3.7.1.v20120104-1859</version>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>2.10.0-M7</version>
     </dependency>
     <dependency>
-      <groupId>org.pushingpixels</groupId>
-      <artifactId>trident</artifactId>
-      <version>1.2.0.v20100204-1500</version>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-compiler</artifactId>
+      <version>2.10.0-M7</version>
     </dependency>
+
   </dependencies>
 
   <repositories>
