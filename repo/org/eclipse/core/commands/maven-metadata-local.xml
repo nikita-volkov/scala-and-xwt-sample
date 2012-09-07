@@ -3,10 +3,11 @@
   <groupId>org.eclipse.core</groupId>
   <artifactId>commands</artifactId>
   <versioning>
-    <release>3.6.0.I20110111-0800</release>
+    <release>3.6.1.v20120521-2329</release>
     <versions>
       <version>3.6.0.I20110111-0800</version>
+      <version>3.6.1.v20120521-2329</version>
     </versions>
-    <lastUpdated>20120905165521</lastUpdated>
+    <lastUpdated>20120907194321</lastUpdated>
   </versioning>
 </metadata>
