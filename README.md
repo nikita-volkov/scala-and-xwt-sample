@@ -7,7 +7,9 @@ XWT is an XML wrapper around SWT graphical user interface framework for JVM deve
 ##Issues
 
 ###Current `pom` version is configured to run on 64-bit OSX
-This is due to conflicts that arise when jars targeted at different platforms are present in the classpath. To be able to run this on other platforms, uncomment the appropriate library in the `pom` or just use the Eclipse-plugin version of the project, which is maintained on the `develop` and `master` branches. 
+This is due to conflicts that arise when jars targeted at different platforms are present in the classpath. To be able to run this on other platforms, uncomment the appropriate library in the `pom` or just use the Eclipse-plugin version of the project, which is maintained on the `eclipse-plugin` branch. 
+
+For production use `pom` should be set up to have separate builds for different platforms.
 
 ###Main thread on OSX
 Due to [this issue](http://stackoverflow.com/q/3976342/485115) you'll have to append `-XstartOnFirstThread` to VM parameters in your run configuration.
